@@ -13,7 +13,7 @@ const Chatbot: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: 'bot',
-      message: "Hello! 👋 I'm A-Tech's virtual assistant. How can I help you today? Ask me about our services, pricing, or anything else!",
+      message: "Hello! 👋 I'm Janastra Technologies' virtual assistant. How can I help you today? Ask me about our services, pricing, or anything else!",
     },
   ]);
   const [input, setInput] = useState('');
@@ -45,7 +45,7 @@ const Chatbot: React.FC = () => {
     } catch {
       setMessages((prev) => [
         ...prev,
-        { role: 'bot', message: "Sorry, I'm having trouble connecting right now. Please try again later or contact us directly at contact@atech.com." },
+        { role: 'bot', message: "Sorry, I'm having trouble connecting right now. Please try again later or contact us directly at contact@janastratech.com." },
       ]);
     } finally {
       setIsTyping(false);
@@ -81,7 +81,7 @@ const Chatbot: React.FC = () => {
             <div className="chatbot-header">
               <h3>
                 <Bot size={20} />
-                A-Tech AI Assistant
+                Janastra Technologies AI Assistant
               </h3>
               <button onClick={() => setIsOpen(false)} aria-label="Close chat">
                 <X size={18} />

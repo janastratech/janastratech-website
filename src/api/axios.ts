@@ -9,7 +9,7 @@ const api = axios.create({
 
 // Add JWT token to requests if available
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('atech_token');
+  const token = localStorage.getItem('janastra_token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
@@ -21,8 +21,8 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('atech_token');
-      localStorage.removeItem('atech_user');
+      localStorage.removeItem('janastra_token');
+      localStorage.removeItem('janastra_user');
     }
     return Promise.reject(error);
   }

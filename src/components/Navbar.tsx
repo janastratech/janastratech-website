@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/janastra technologies.png';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,8 +34,8 @@ const Navbar: React.FC = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-navbar">
         <div className="navbar-inner">
           <Link to="/" className="navbar-logo" id="navbar-logo">
-            <Zap size={24} color="#818cf8" />
-            <span className="gradient-text">A-Tech</span>
+            <img src={logo} alt="Janastra Technologies Logo" style={{ height: '32px', width: 'auto', objectFit: 'contain' }} />
+            <span className="gradient-text">Janastra Technologies</span>
           </Link>
 
           <ul className="navbar-links" id="navbar-links">

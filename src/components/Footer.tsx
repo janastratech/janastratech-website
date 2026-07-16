@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Zap, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import logo from '../assets/janastra technologies.png';
 
 const GithubIcon: React.FC<{ size?: number }> = ({ size = 18 }) => (
   <svg
@@ -59,8 +60,8 @@ const Footer: React.FC = () => {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link to="/" className="navbar-logo" id="footer-logo">
-              <Zap size={24} color="#818cf8" />
-              <span className="gradient-text">A-Tech</span>
+              <img src={logo} alt="Janastra Technologies Logo" style={{ height: '32px', width: 'auto', objectFit: 'contain' }} />
+              <span className="gradient-text">Janastra Technologies</span>
             </Link>
             <p>
               Empowering businesses with innovative software solutions. From AI-powered
@@ -91,7 +92,7 @@ const Footer: React.FC = () => {
           <div>
             <h4>Contact</h4>
             <ul className="footer-links">
-              <li>contact@atech.com</li>
+              <li>contact@janastratech.com</li>
               <li>+1 (555) 123-4567</li>
               <li>123 Innovation Drive</li>
               <li>Silicon Valley, CA</li>
@@ -100,7 +101,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} A-Tech Software Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Janastra Technologies. All rights reserved.</p>
           <div className="footer-social">
             <a href="#" aria-label="GitHub" id="social-github"><GithubIcon size={18} /></a>
             <a href="#" aria-label="Twitter" id="social-twitter"><TwitterIcon size={18} /></a>

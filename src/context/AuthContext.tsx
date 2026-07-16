@@ -25,8 +25,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const savedToken = localStorage.getItem('atech_token');
-    const savedUser = localStorage.getItem('atech_user');
+    const savedToken = localStorage.getItem('janastra_token');
+    const savedUser = localStorage.getItem('janastra_user');
     if (savedToken && savedUser) {
       setToken(savedToken);
       setUser(JSON.parse(savedUser));
@@ -39,8 +39,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const { token: newToken, user: newUser } = response.data;
     setToken(newToken);
     setUser(newUser);
-    localStorage.setItem('atech_token', newToken);
-    localStorage.setItem('atech_user', JSON.stringify(newUser));
+    localStorage.setItem('janastra_token', newToken);
+    localStorage.setItem('janastra_user', JSON.stringify(newUser));
   };
 
   const register = async (name: string, email: string, password: string) => {
@@ -48,15 +48,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const { token: newToken, user: newUser } = response.data;
     setToken(newToken);
     setUser(newUser);
-    localStorage.setItem('atech_token', newToken);
-    localStorage.setItem('atech_user', JSON.stringify(newUser));
+    localStorage.setItem('janastra_token', newToken);
+    localStorage.setItem('janastra_user', JSON.stringify(newUser));
   };
 
   const logout = () => {
     setToken(null);
     setUser(null);
-    localStorage.removeItem('atech_token');
-    localStorage.removeItem('atech_user');
+    localStorage.removeItem('janastra_token');
+    localStorage.removeItem('janastra_user');
   };
 
   return (

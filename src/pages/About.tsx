@@ -23,7 +23,7 @@ const About: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          About <span className="gradient-text">A-Tech</span>
+          About <span className="gradient-text">Janastra Technologies</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ const About: React.FC = () => {
                 Our <span className="gradient-text-purple">Story</span>
               </h2>
               <p style={{ color: '#94a3b8', lineHeight: 1.8, marginBottom: '1rem' }}>
-                Founded in 2019, A-Tech Software Solutions began with a simple belief: every business
+                Founded in 2019, Janastra Technologies began with a simple belief: every business
                 deserves access to world-class software. What started as a small team of 5
                 passionate developers has grown into a powerhouse of 50+ experts serving
                 clients across 20+ countries.

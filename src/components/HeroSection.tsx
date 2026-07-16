@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               style={{ fontSize: '1.125rem', color: '#94a3b8', maxWidth: '600px', margin: '1.5rem 0 2rem' }}
             >
-              From AI-powered chatbots to enterprise-grade platforms, A-Tech transforms
+              From AI-powered chatbots to enterprise-grade platforms, Janastra Technologies transforms
               your boldest ideas into powerful, scalable software solutions that drive
               real business growth.
             </motion.p>
@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
                   <div className="mockup-dot red" />
                   <div className="mockup-dot yellow" />
                   <div className="mockup-dot green" />
-                  <span style={{ fontSize: '11px', color: '#64748b', marginLeft: 'auto' }}>a-tech-portal.io</span>
+                  <span style={{ fontSize: '11px', color: '#64748b', marginLeft: 'auto' }}>janastratech-portal.io</span>
                 </div>
                 
                 <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -136,7 +136,7 @@ const HeroSection: React.FC = () => {
                   <div style={{ background: 'rgba(15,23,42,0.85)', borderRadius: '0.75rem', padding: '0.75rem', border: '1px solid rgba(255,255,255,0.05)', display: 'flex', gap: '0.5rem' }}>
                     <Terminal size={14} className="text-indigo-400" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div style={{ fontFamily: 'monospace', fontSize: '9px', color: '#94a3b8' }}>
-                      <p style={{ color: '#818cf8' }}>$ npx a-tech-agent start</p>
+                      <p style={{ color: '#818cf8' }}>$ npx janastratech-agent start</p>
                       <p style={{ color: '#34d399' }}>✓ AI Agent initialized successfully.</p>
                       <p style={{ color: '#22d3ee' }}>✓ Listening on: port 5000 (Express API)</p>
                       <p style={{ color: '#cbd5e1' }} className="animate-pulse">_ compiling resources...</p>
